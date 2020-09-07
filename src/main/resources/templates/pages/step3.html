@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<div th:insert="fragments/_head :: head"></div>
+<div th:insert="fragments/_header :: header"></div>
+<div class="container text-center">
+    <h3 class="mt-5 welcome-title">STEP 3: The Catch</h3>
+    <img class="steps" th:src="@{/img/step3.jpg}">
+    <p class="mt-5 container welcome-p">
+        The FINAL step! Once you have gotten comfortable flicking properly now you have
+        to work on the catch! If you are flicking properly your board will level out underneath
+        you and the last thing you have to do is "catch it" with your back foot, land back
+        down on top of your board, and there you have it! You've landed your first ever KICKFLIP!<br><br>
+        Thank you for learning with me! If you would like to go back Home click <a th:href="@{/home}">HERE</a>
+        OR if you want an in depth video on how to kickflip click <a th:href="@{/redirect/video}">HERE</a>.
+    </p>
+</div>
+
+<div th:insert="fragments/_footer :: footer"></div>

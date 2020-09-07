@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<div th:insert="fragments/_head :: head"></div>
+<div th:insert="fragments/_header :: header"></div>
+<div class="container text-center">
+    <h3 class="mt-5 welcome-title">How to Kickflip video!</h3>
+    <iframe width="560" height="315" th:src="@{https://www.youtube.com/embed/Zebs7JZ2PW0}"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+</div>
+
+<div th:insert="fragments/_footer :: footer"></div>

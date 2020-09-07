@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<div th:insert="fragments/_head :: head"></div>
+<body>
+    <header th:fragment="header">
+        <nav class="navbar navbar-expand-md navbar-light bg-info justify-content-center ">
+            <a class="navbar-brand" th:href="@{/}">How to Kickflip</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/steps/step-1}">Step 1 |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/steps/step-2}">Step 2 |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/steps/step-3}">Step 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
